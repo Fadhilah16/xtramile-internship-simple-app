@@ -27,11 +27,11 @@ export default function CreatePage(){
 
     const toggleShowToast = () => setShowToast(!showToast);
 
-    const spinner =   (<div style={{position: "relative", zIndex: 999}} className="d-flex justify-content-center">
-                <Spinner style={{position: "absolute"}} className="" animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>
-            </div>);
+    const spinner = (<div style={{position: "relative", zIndex: 999}} className="d-flex justify-content-center">
+                        <Spinner style={{position: "absolute"}} className="" animation="border" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </Spinner>
+                     </div>);
 
 
     function toastFunction(title, body, textColor){

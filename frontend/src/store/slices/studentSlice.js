@@ -137,6 +137,7 @@ const studentSlice = createSlice({
         [createStudent.fulfilled] : (state, action) => {
             state.loading = false;
             state.students = state.student.push(action.payload);
+            state.paginateStudents = state.students;
             state.success = true;
         },
         [createStudent.rejected] : (state, action) => {
@@ -170,6 +171,7 @@ const studentSlice = createSlice({
         [deleteStudent.fulfilled] : (state, action) => {
             state.loading = false;
             state.students = state.students.filter(student => student.id !== action.payload.id);
+            state.paginateStudents = state.paginateStudents.filter(student => student.id !== action.payload.id);
             state.success = true;
         },
         [deleteStudent.rejected] : (state, action) => {

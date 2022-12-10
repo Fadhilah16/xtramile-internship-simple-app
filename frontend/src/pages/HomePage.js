@@ -28,7 +28,7 @@ export default function HomePage(){
 
     },[dispatch, size, currentPage, scrollX, scrollY]);
 
-    const spinner =  (<div className="d-flex justify-content-center">
+    const spinner = (<div className="d-flex justify-content-center">
                         <Spinner className="" animation="border" role="status">
                             <span className="visually-hidden">Loading...</span>
                         </Spinner>

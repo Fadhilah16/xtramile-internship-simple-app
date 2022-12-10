@@ -27,10 +27,10 @@ export default function DetailsPage(){
     var age = Math.abs(ageDate.getUTCFullYear() - 1970);
 
     const spinner =   (<div style={{position: "relative", zIndex: 999}} className="d-flex justify-content-center">
-                <Spinner style={{position: "absolute"}} className="" animation="border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </Spinner>
-            </div>);
+                            <Spinner style={{position: "absolute"}} className="" animation="border" role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </Spinner>
+                        </div>);
 
 
     function backHandler(){

@@ -1,11 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CreatePage from './pages/CreatePage';
 import EditPage from './pages/EditPage';
 import DetailsPage from './pages/DetailsPage';
-import { useEffect } from 'react';
 
 
 function App() {
